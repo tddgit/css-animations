@@ -6,10 +6,55 @@
   border-radius: 4rem;
   padding: 0.5em;
   margin: 2rem;
+  margin-top: 3rem;
 }
 
 .btn:hover {
   background-color: #007da7;
   color: #e3e3e3;
   font-size: 2rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: center;
+  /*align-items: center;*/
+  position: relative;
+  background-color: red;
+  border: 1px solid;
+  border-radius: 4rem;
+  padding: 1rem;
+  margin: 1rem;
+  /*min-width: 1rem;*/
+  max-width: 6rem;
+  transition: 1s;
+  text-align: center;
+}
+
+.button:hover .top {
+  top: -100px;
+}
+
+.button:hover .bottom {
+  top: 0px;
+}
+
+.content {
+  position: absolute;
+  transition: top 0.2s;
+  overflow: hidden;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  top: 100px;
 }
